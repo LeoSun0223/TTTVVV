@@ -2,7 +2,9 @@
 
 本表需要在用户的杭州电信真实家庭网络上填写，开发机或 GitHub Runner 不能代填。仅对实际入选的频道验收，缺失台填写“未入选”。当前均未进行电视验收。
 
-订阅：部署成功后填写真实 `live.m3u` HTTPS 地址。TiviMate 免费版仅维护这一份；需要排查时以 `backup.m3u` 替换并手动选备用。
+已验证的订阅：[https://leosun0223.github.io/TTTVVV/live.m3u](https://leosun0223.github.io/TTTVVV/live.m3u)。TiviMate 选择“添加播放列表”→“M3U 播放列表”→“输入网址”，添加这一份。免费版仅维护一份；需要排查时以 [backup.m3u](https://leosun0223.github.io/TTTVVV/backup.m3u) 替换并手动选备用。
+
+首次云端发布为 2026-10-21 00:03（北京时间），47 个频道；CCTV5+、CCTV10、甘肃卫视本轮未入选。下列六个重点频道本轮均已入选，但尚未在电视上验收。最新版本以在线 `report.json` 为准。
 
 | 频道 | 打开耗时 | 观看约 5 分钟 | 超过 24 秒后是否继续 | 卡顿/节目错配 | 结论 |
 | --- | --- | --- | --- | --- | --- |

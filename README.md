@@ -2,7 +2,11 @@
 
 面向 Redmi X65、杭州电信宽带、TiviMate 免费版的一份在线订阅。仅收 CCTV1～17、CCTV5+ 和 32 个主要省级卫视，浙江卫视排在卫视首位。V3 任务书是唯一需求，V1/V2 作废。
 
-**M1～M3 已完成本地开发与验证，尚未部署 GitHub Pages。不存在已确认可用的在线订阅地址。** 当前 82 项测试通过，最近一轮本地实测生成 46 台主线、77 条主备记录；该结果不代表电视验收通过。完整证据见 [开发验收记录](docs/ACCEPTANCE.md)。
+**已于 2026-10-21 完成首次 GitHub Pages 发布。** 本地与 GitHub Actions 的 82 项测试均通过；首次云端发布包含 **47 台主线、77 条主备记录**，全部为本轮验证的 720P+ 线路。该结果不代表电视验收通过。最新数量和检测时间以 [在线报告](https://leosun0223.github.io/TTTVVV/report.json) 为准，完整过程见 [开发验收记录](docs/ACCEPTANCE.md)。
+
+TiviMate 日常只添加这一份订阅：[**live.m3u**](https://leosun0223.github.io/TTTVVV/live.m3u)。排查时可替换为 [backup.m3u](https://leosun0223.github.io/TTTVVV/backup.m3u)，[状态页](https://leosun0223.github.io/TTTVVV/) 显示当前版本检测时间。
+
+[首次成功的 Actions 运行](https://github.com/LeoSun0223/TTTVVV/actions/runs/39452035213) 完成了真实检测、部署、HTTPS 文件逐字节校验和 `output/` 归档。本轮缺失 CCTV5+、CCTV10、甘肃卫视；未用未经验证的地址补齐。自动更新计划为北京时间每天 07:17，失败时保留上次成功版本。
 
 系统每天采集公开 M3U，只保留本轮实际通过 HLS 前进、分片下载和 ffprobe 画质检测的线路。1080P 优先，720P 是最低标准；每频道最多两条。本项目不转播、不缓存供人播放，不承担加速功能，也不需要 Mac 常驻、NAS、Docker、VPS、代理或后台。
 
@@ -69,7 +73,7 @@ python -m iptv_clean --publish-local --dns alidns --output-dir tmp/site --report
 
 ## GitHub Actions 与 Pages 部署
 
-目标仓库是用户已创建的 [LeoSun0223/TTTVVV](https://github.com/LeoSun0223/TTTVVV)。本地准备工作不会登录、推送、开通 Pages 或变更权限；远程操作需要用户确认后执行。详细步骤见 [部署说明](docs/DEPLOYMENT.md)。
+目标仓库是用户已创建的 [LeoSun0223/TTTVVV](https://github.com/LeoSun0223/TTTVVV)。本次已经用户明确确认后完成推送、启用 Pages 与首次发布；本地 CLI 本身仍不会登录、推送或发布。详细步骤见 [部署说明](docs/DEPLOYMENT.md)。
 
 工作流 `.github/workflows/update.yml` 只接受手动运行和每日北京时间 07:17 的计划触发。同一工作流完成安装、离线测试、真实检测、门禁、Pages artifact 上传、部署、HTTPS 内容校验、最后归档提交，避免用 GITHUB_TOKEN 推送后依赖另一条工作流触发。归档在部署成功之后进行，防止把未部署版本冒充最后成功版本。
 

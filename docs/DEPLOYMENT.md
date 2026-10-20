@@ -16,7 +16,7 @@
 python scripts/verify_site.py '实际部署返回的 HTTPS 站点根地址' --expected-dir tmp/site
 ```
 
-本仓库的**预期地址**为 `https://leosun0223.github.io/TTTVVV/live.m3u`，此处仅说明路径规则；部署和 HTTP 内容验证前它不是交付的可用订阅。不要把 GitHub 网页里的文件页或 Mac 本地路径输入电视。
+本仓库已于 **2026-10-21** 完成首次部署，并由 Runner 和本机验证 HTTP 200、内容与归档一致。真实订阅：[live.m3u](https://leosun0223.github.io/TTTVVV/live.m3u)，对应 [成功的 Actions 运行](https://github.com/LeoSun0223/TTTVVV/actions/runs/39452035213)。不要把 GitHub 网页里的文件页或 Mac 本地路径输入电视。后续部署仍应按实际返回地址与内容校验，不凭名称推测成功。
 
 ## 每日更新与诊断
 

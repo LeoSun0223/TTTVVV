@@ -9,7 +9,8 @@
 
 ## 当前状态与命令
 - 开发分 M1 采集解析、M2 安全直播检测、M3 产物和发布门禁、M4 Actions/Pages。
-- M1～M3 已实现，M4 工作流/文档已准备，远程操作待用户确认；实际证据与未完成项见 `docs/ACCEPTANCE.md`。
+- M1～M3 已完成，M4 于 2026-10-21 首次成功部署。Actions 39452035213 成功，82 项测试通过，首次云端 47 台/77 条线路；电视人工验收待进行。证据见 `docs/ACCEPTANCE.md`。
+- 真实订阅：`https://leosun0223.github.io/TTTVVV/live.m3u`；以在线报告为准，不能把首次数量当永久保证。`output/` 为已发布版本，bot 已归档。
 - `python3 -m venv .venv`；`.venv/bin/pip install -r requirements.txt`。
 - `.venv/bin/pytest -q`；`.venv/bin/python -m iptv_clean --list-candidates`。
 - `.venv/bin/python -m iptv_clean --dry-run --report-dir tmp/check`。
@@ -19,5 +20,6 @@
 ## 协作与权限
 - 先检查 Git 状态，保留已有任务包和无关文件；提交信息默认中文。
 - 本地开发测试已授权。GitHub 登录、推送、权限变更和公开发布须用户明确确认。
+- 本轮用户已明确同意推送到 `LeoSun0223/TTTVVV`、启用 Pages 和首次发布，完成本任务不重复询问。新的无关权限/发布操作仍需确认。
 - 不把预计 Pages URL 当成已上线；不把 Runner 通过当作家庭电视验收通过。
 - 不记录凭据或敏感查询；报告写明环境和真实结果。仅成功发布的版本进入 `output/`。

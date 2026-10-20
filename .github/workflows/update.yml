@@ -1,0 +1,86 @@
+name: 每日检测并发布 IPTV
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC 23:17 = 北京时间次日 07:17；计划触发可能排队延迟。
+    - cron: '17 23 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: iptv-pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 检出默认分支及最后成功版本
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: 安装依赖及 ffprobe
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+          python -m pip install -r requirements.txt
+          ffprobe -version
+      - name: 离线自动化测试（包括真实 ffprobe）
+        run: pytest -q
+      - name: 真实直播检测及发布门禁
+        run: |
+          python -m iptv_clean --publish-local --previous-dir output --output-dir tmp/site --report-dir tmp/check
+          python scripts/check_outputs.py tmp/site
+      - name: 配置 Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: 上传完整静态版本
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: tmp/site
+      - name: 部署 Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      - name: 校验真实 HTTPS 内容
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: python scripts/verify_site.py "$PAGE_URL" --expected-dir tmp/site
+      - name: 归档已部署成功版本
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          python scripts/archive_deployment.py
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- output
+          git commit -m '更新已验证并发布的 IPTV 订阅'
+          git push origin "HEAD:$TARGET_BRANCH"
+      - name: 保存检测报告（失败时不部署、不覆盖旧版）
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: iptv-diagnostics-${{ github.run_id }}
+          path: tmp/check/
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: 运行摘要
+        if: always()
+        run: |
+          if test -f tmp/check/summary.md; then
+            cat tmp/check/summary.md >> "$GITHUB_STEP_SUMMARY"
+          fi

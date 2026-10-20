@@ -1,0 +1,22 @@
+{
+  "workers": 6,
+  "per_host_concurrency": 2,
+  "http_timeout": 8,
+  "max_redirects": 4,
+  "max_source_bytes": 8388608,
+  "max_playlist_bytes": 1048576,
+  "max_segment_bytes": 16777216,
+  "max_candidate_bytes": 37748736,
+  "max_run_bytes": 1073741824,
+  "max_precheck_per_channel": 12,
+  "max_deep_per_channel": 4,
+  "min_observation_seconds": 30,
+  "max_observation_seconds": 45,
+  "min_poll_intervals": 3,
+  "min_height": 720,
+  "probe_timeout": 12,
+  "run_budget_seconds": 1320,
+  "publish_min_channels": 10,
+  "publish_min_ratio": 0.7,
+  "priority_channels": ["CCTV1", "CCTV5", "CCTV13", "浙江卫视", "湖南卫视", "江苏卫视", "东方卫视"]
+}

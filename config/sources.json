@@ -1,0 +1,6 @@
+[
+  {"name": "CCSH/IPTV", "url": "https://raw.githubusercontent.com/CCSH/IPTV/main/live_lite.m3u", "enabled": true},
+  {"name": "Oasisic-IPTV", "url": "https://raw.githubusercontent.com/Hawaiine/Oasisic-IPTV/main/output/live_backup.m3u", "enabled": true},
+  {"name": "vbskycn/iptv", "url": "https://live.zbds.top/tv/iptv4.m3u", "enabled": false},
+  {"name": "fanmingming/live IPv6", "url": "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u", "enabled": false}
+]

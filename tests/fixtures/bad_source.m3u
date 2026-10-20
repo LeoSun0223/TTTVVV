@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1,CCTV1
+http://example.org/a.m3u8#http://example.org/b.m3u8
+#EXTINF:-1,CCTV5
+rtsp://example.org/stream
+#EXTINF:-1,浙江卫视
+http://127.0.0.1/metadata

@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" group-title="央视-主线",CCTV1
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk33
 #EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" group-title="央视-主线",CCTV2
-http://107.150.60.122/live/cctv2hd.m3u8
+http://198.204.228.26/live/cctv2hd.m3u8
 #EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV3" group-title="央视-主线",CCTV3
 http://69.30.245.50/live/cctv3.m3u8
 #EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV4" group-title="央视-主线",CCTV4
@@ -16,17 +16,17 @@ http://204.12.221.218:8181/3m1080p/cctv6.m3u8
 #EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV7" group-title="央视-主线",CCTV7
 http://107.150.60.122/live/cctv7hd.m3u8
 #EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV8" group-title="央视-主线",CCTV8
-http://69.30.245.50/live/cctv8.m3u8
+http://173.208.212.130:8181/720p/cctv8.m3u8
 #EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV9" group-title="央视-主线",CCTV9
-http://192.151.150.154/live/cctv9hd.m3u8
+http://173.208.234.146/live/cctv9.m3u8
 #EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV10" group-title="央视-主线",CCTV10
-http://192.151.150.154/live/cctv10hd.m3u8
+http://173.208.234.146/live/cctv10.m3u8
 #EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV11" group-title="央视-主线",CCTV11
 http://192.151.150.154/live/cctv11hd.m3u8
 #EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV12" group-title="央视-主线",CCTV12
 http://192.151.150.154/live/cctv12hd.m3u8
 #EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV13" group-title="央视-主线",CCTV13
-http://192.151.150.154/live/cctv13hd.m3u8
+http://107.150.60.122/live/cctv13hd.m3u8
 #EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV14" group-title="央视-主线",CCTV14
 http://192.151.150.154/live/cctv14hd.m3u8
 #EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV15" group-title="央视-主线",CCTV15
@@ -38,7 +38,7 @@ http://173.208.234.146/live/cctv17.m3u8
 #EXTINF:-1 tvg-id="CCTV1" tvg-name="CCTV1" group-title="央视-备用",CCTV1 (备用)
 http://204.12.221.218:8181/3m1080p/cctv1.m3u8
 #EXTINF:-1 tvg-id="CCTV2" tvg-name="CCTV2" group-title="央视-备用",CCTV2 (备用)
-http://198.204.228.26/live/cctv2hd.m3u8
+http://107.150.60.122/live/cctv2hd.m3u8
 #EXTINF:-1 tvg-id="CCTV3" tvg-name="CCTV3" group-title="央视-备用",CCTV3 (备用)
 http://192.151.150.154/live/cctv3hd.m3u8
 #EXTINF:-1 tvg-id="CCTV4" tvg-name="CCTV4" group-title="央视-备用",CCTV4 (备用)
@@ -50,17 +50,21 @@ http://173.208.234.146/live/cctv6.m3u8
 #EXTINF:-1 tvg-id="CCTV7" tvg-name="CCTV7" group-title="央视-备用",CCTV7 (备用)
 http://173.208.234.146/live/cctv7.m3u8
 #EXTINF:-1 tvg-id="CCTV8" tvg-name="CCTV8" group-title="央视-备用",CCTV8 (备用)
-http://192.151.150.154/live/cctv8hd.m3u8
+http://74.91.26.218:82/live/cctv8hd.m3u8
 #EXTINF:-1 tvg-id="CCTV9" tvg-name="CCTV9" group-title="央视-备用",CCTV9 (备用)
-http://173.208.234.146/live/cctv9.m3u8
+http://192.151.150.154/live/cctv9hd.m3u8
 #EXTINF:-1 tvg-id="CCTV10" tvg-name="CCTV10" group-title="央视-备用",CCTV10 (备用)
-http://173.208.234.146/live/cctv10.m3u8
+http://192.151.150.154/live/cctv10hd.m3u8
 #EXTINF:-1 tvg-id="CCTV11" tvg-name="CCTV11" group-title="央视-备用",CCTV11 (备用)
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv11hd
 #EXTINF:-1 tvg-id="CCTV12" tvg-name="CCTV12" group-title="央视-备用",CCTV12 (备用)
 http://173.208.234.146/live/cctv12.m3u8
 #EXTINF:-1 tvg-id="CCTV13" tvg-name="CCTV13" group-title="央视-备用",CCTV13 (备用)
-http://107.150.60.122/live/cctv13hd.m3u8
+http://192.151.150.154/live/cctv13hd.m3u8
+#EXTINF:-1 tvg-id="CCTV14" tvg-name="CCTV14" group-title="央视-备用",CCTV14 (备用)
+http://204.12.221.218:8181/3m1080p/cctv14.m3u8
+#EXTINF:-1 tvg-id="CCTV15" tvg-name="CCTV15" group-title="央视-备用",CCTV15 (备用)
+http://198.204.228.26/live/cctv15hd.m3u8
 #EXTINF:-1 tvg-id="CCTV16" tvg-name="CCTV16" group-title="央视-备用",CCTV16 (备用)
 http://173.208.234.146/live/cctv16.m3u8
 #EXTINF:-1 tvg-id="CCTV17" tvg-name="CCTV17" group-title="央视-备用",CCTV17 (备用)
@@ -68,7 +72,7 @@ http://192.151.150.154/live/cctv17hd.m3u8
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" group-title="卫视-主线",浙江卫视
 http://192.151.150.154/live/zjwshd.m3u8
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" group-title="卫视-主线",湖南卫视
-http://107.150.60.122/live/hnwshd.m3u8
+http://173.208.212.130:8181/720p/hnws.m3u8
 #EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" group-title="卫视-主线",江苏卫视
 http://198.204.228.26/live/jswshd.m3u8
 #EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" group-title="卫视-主线",东方卫视
@@ -82,15 +86,15 @@ http://107.150.60.122/live/szwshd.m3u8
 #EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" group-title="卫视-主线",安徽卫视
 http://192.151.150.154/live/ahwshd.m3u8
 #EXTINF:-1 tvg-id="山东卫视" tvg-name="山东卫视" group-title="卫视-主线",山东卫视
-http://sagrad.org:8181/3m1080p/sdws.m3u8
+http://192.151.150.154/live/sdwshd.m3u8
 #EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视" group-title="卫视-主线",湖北卫视
-http://107.150.60.122/live/hbwshd.m3u8
+http://192.151.150.154/live/hbwshd.m3u8
 #EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" group-title="卫视-主线",河南卫视
 http://107.150.60.122/live/hawshd.m3u8
 #EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" group-title="卫视-主线",河北卫视
 http://107.150.60.122/live/hewshd.m3u8
 #EXTINF:-1 tvg-id="江西卫视" tvg-name="江西卫视" group-title="卫视-主线",江西卫视
-http://192.151.150.154/live/jxwshd.m3u8
+http://107.150.60.122/live/jxwshd.m3u8
 #EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" group-title="卫视-主线",东南卫视
 http://192.151.150.154/live/dnwshd.m3u8
 #EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" group-title="卫视-主线",四川卫视
@@ -100,7 +104,7 @@ http://192.151.150.154/live/cqwshd.m3u8
 #EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" group-title="卫视-主线",天津卫视
 http://107.150.60.122/live/tjwshd.m3u8
 #EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" group-title="卫视-主线",辽宁卫视
-http://192.151.150.154/live/lnwshd.m3u8
+http://107.150.60.122/live/lnwshd.m3u8
 #EXTINF:-1 tvg-id="吉林卫视" tvg-name="吉林卫视" group-title="卫视-主线",吉林卫视
 http://107.150.60.122/live/jlwshd.m3u8
 #EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" group-title="卫视-主线",黑龙江卫视
@@ -110,17 +114,17 @@ http://192.151.150.154/live/snwshd.m3u8
 #EXTINF:-1 tvg-id="山西卫视" tvg-name="山西卫视" group-title="卫视-主线",山西卫视
 http://107.150.60.122/live/sxwshd.m3u8
 #EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" group-title="卫视-主线",广西卫视
-http://192.151.150.154/live/gxwshd.m3u8
+https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8
 #EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" group-title="卫视-主线",贵州卫视
-http://204.12.221.218:8181/3m1080p/gzws.m3u8
+http://192.151.150.154/live/gzwshd.m3u8
 #EXTINF:-1 tvg-id="云南卫视" tvg-name="云南卫视" group-title="卫视-主线",云南卫视
 http://107.150.60.122/live/ynwshd.m3u8
 #EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" group-title="卫视-主线",海南卫视
 http://sagrad.org:8181/3m1080p/lyws.m3u8
 #EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" group-title="卫视-主线",甘肃卫视
 http://198.204.228.26/live/gswshd.m3u8
-#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://cdn.jsdelivr.net/gh/Hawaiine/Oasisic-IPTV@main/logo/QHTV.png" group-title="卫视-主线",青海卫视
-http://107.150.60.122/live/qhws.m3u8
+#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" group-title="卫视-主线",青海卫视
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=qhws
 #EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" group-title="卫视-主线",宁夏卫视
 http://107.150.60.122/live/nxws.m3u8
 #EXTINF:-1 tvg-id="新疆卫视" tvg-name="新疆卫视" tvg-logo="https://cdn.jsdelivr.net/gh/Hawaiine/Oasisic-IPTV@main/logo/XJTV.png" group-title="卫视-主线",新疆卫视
@@ -132,7 +136,7 @@ http://107.150.60.122/live/nmgws.m3u8
 #EXTINF:-1 tvg-id="浙江卫视" tvg-name="浙江卫视" group-title="卫视-备用",浙江卫视 (备用)
 http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
 #EXTINF:-1 tvg-id="湖南卫视" tvg-name="湖南卫视" group-title="卫视-备用",湖南卫视 (备用)
-http://173.208.212.130:8181/720p/hnws.m3u8
+http://107.150.60.122/live/hnwshd.m3u8
 #EXTINF:-1 tvg-id="江苏卫视" tvg-name="江苏卫视" group-title="卫视-备用",江苏卫视 (备用)
 http://107.150.60.122/live/jswshd.m3u8
 #EXTINF:-1 tvg-id="东方卫视" tvg-name="东方卫视" group-title="卫视-备用",东方卫视 (备用)
@@ -145,18 +149,14 @@ https://h5cdn3.kylintv.tv/live/gdtvhd_iphone.m3u8
 http://204.12.221.218:8181/3m1080p/szws.m3u8
 #EXTINF:-1 tvg-id="安徽卫视" tvg-name="安徽卫视" group-title="卫视-备用",安徽卫视 (备用)
 http://198.204.228.26/live/ahwshd.m3u8
-#EXTINF:-1 tvg-id="湖北卫视" tvg-name="湖北卫视" group-title="卫视-备用",湖北卫视 (备用)
-http://204.12.221.218:8181/3m1080p/hbws.m3u8
-#EXTINF:-1 tvg-id="河南卫视" tvg-name="河南卫视" group-title="卫视-备用",河南卫视 (备用)
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hawshd
+#EXTINF:-1 tvg-id="河北卫视" tvg-name="河北卫视" group-title="卫视-备用",河北卫视 (备用)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hewshd
 #EXTINF:-1 tvg-id="东南卫视" tvg-name="东南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/Hawaiine/Oasisic-IPTV@main/logo/SETV.png" group-title="卫视-备用",东南卫视 (备用)
 http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
+#EXTINF:-1 tvg-id="四川卫视" tvg-name="四川卫视" group-title="卫视-备用",四川卫视 (备用)
+http://192.151.150.154/live/scwshd.m3u8
 #EXTINF:-1 tvg-id="重庆卫视" tvg-name="重庆卫视" group-title="卫视-备用",重庆卫视 (备用)
 http://204.12.221.218:8181/3m1080p/cqws.m3u8
-#EXTINF:-1 tvg-id="天津卫视" tvg-name="天津卫视" group-title="卫视-备用",天津卫视 (备用)
-http://173.208.212.130:8181/720p/tjws.m3u8
-#EXTINF:-1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" group-title="卫视-备用",辽宁卫视 (备用)
-http://198.204.228.26/live/lnwshd.m3u8
 #EXTINF:-1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" group-title="卫视-备用",黑龙江卫视 (备用)
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hljwshd
 #EXTINF:-1 tvg-id="陕西卫视" tvg-name="陕西卫视" group-title="卫视-备用",陕西卫视 (备用)
@@ -164,20 +164,18 @@ http://107.150.60.122/live/snwshd.m3u8
 #EXTINF:-1 tvg-id="山西卫视" tvg-name="山西卫视" group-title="卫视-备用",山西卫视 (备用)
 http://192.151.150.154/live/sxwshd.m3u8
 #EXTINF:-1 tvg-id="广西卫视" tvg-name="广西卫视" group-title="卫视-备用",广西卫视 (备用)
-https://hlscdn.liangtv.cn/live/de0f97348eb84f62aa6b7d8cf0430770/dd505d87880c478f901f38560ca4d4e6.m3u8
+http://192.151.150.154/live/gxwshd.m3u8
 #EXTINF:-1 tvg-id="贵州卫视" tvg-name="贵州卫视" group-title="卫视-备用",贵州卫视 (备用)
-http://192.151.150.154/live/gzwshd.m3u8
-#EXTINF:-1 tvg-id="云南卫视" tvg-name="云南卫视" group-title="卫视-备用",云南卫视 (备用)
-http://198.204.228.26/live/ynwshd.m3u8
+http://204.12.221.218:8181/3m1080p/gzws.m3u8
+#EXTINF:-1 tvg-id="海南卫视" tvg-name="海南卫视" group-title="卫视-备用",海南卫视 (备用)
+http://63.141.230.178:82/gslb/zbdq5.m3u8?id=hinwshd
 #EXTINF:-1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" group-title="卫视-备用",甘肃卫视 (备用)
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=gswshd
-#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" group-title="卫视-备用",青海卫视 (备用)
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=qhws
+#EXTINF:-1 tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://cdn.jsdelivr.net/gh/Hawaiine/Oasisic-IPTV@main/logo/QHTV.png" group-title="卫视-备用",青海卫视 (备用)
+http://107.150.60.122/live/qhws.m3u8
 #EXTINF:-1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" group-title="卫视-备用",宁夏卫视 (备用)
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=nxws
 #EXTINF:-1 tvg-id="新疆卫视" tvg-name="新疆卫视" group-title="卫视-备用",新疆卫视 (备用)
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=xjws
-#EXTINF:-1 tvg-id="西藏卫视" tvg-name="西藏卫视" group-title="卫视-备用",西藏卫视 (备用)
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=xzwshd
 #EXTINF:-1 tvg-id="内蒙古卫视" tvg-name="内蒙古卫视" group-title="卫视-备用",内蒙古卫视 (备用)
-http://63.141.230.178:82/gslb/zbdq5.m3u8?id=nmgws
+http://198.204.228.26/live/nmgws.m3u8

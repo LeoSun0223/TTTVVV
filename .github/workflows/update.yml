@@ -24,7 +24,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment_retry.outputs.page_url || steps.deployment.outputs.page_url }}
     steps:
       - name: 检出默认分支及最后成功版本
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -53,14 +53,23 @@ jobs:
           path: tmp/site
       - name: 部署 Pages
         id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
+      # 上传成功后，Pages 的工件查询可能暂时找不到发布包。
+      - name: 等待 Pages 发布包可见
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 15
+      - name: 重试一次 Pages 部署
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
       - name: 校验真实 HTTPS 内容
         env:
-          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          PAGE_URL: ${{ steps.deployment_retry.outputs.page_url || steps.deployment.outputs.page_url }}
         run: python scripts/verify_site.py "$PAGE_URL" --expected-dir tmp/site
       - name: 归档已部署成功版本
         env:
-          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          PAGE_URL: ${{ steps.deployment_retry.outputs.page_url || steps.deployment.outputs.page_url }}
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           TARGET_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
